@@ -8,7 +8,11 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class Configuration {
-
+	
+	/**
+	 * Spring boot configuration
+	 * @param args
+	 */
 	public static void main(String args[]) {
 		SpringApplication.run(Configuration.class, args);
 	}

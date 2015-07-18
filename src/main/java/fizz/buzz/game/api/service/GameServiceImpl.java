@@ -26,17 +26,17 @@ public class GameServiceImpl implements GameService {
 	}
 
 	private List<String> getSequence(String value) {
-		if (value == null || this.tryParse(value) == null) {
-			return Arrays.asList("The input is invalid");
+		if (value == null || this.tryParse(value) == null || this.tryParse(value) < 0 ) {
+			return Arrays.asList(INVALID_INPUT);
 		}
 		ArrayList<String> sequences = new ArrayList<String>();
 		for (int i = 1; i <= this.tryParse(value); ++i) {
 			if (i % 5 == 0 && i % 3 == 0) {
-				sequences.add(String.format("%s %s", "Fizz", "Buzz"));
+				sequences.add(String.format("%s %s", FIZZ, BUZZ));
 			} else if (i % 5 == 0) {
-				sequences.add("Buzz");
+				sequences.add(BUZZ);
 			} else if (i % 3 == 0) {
-				sequences.add("Fizz");
+				sequences.add(FIZZ);
 			} else {
 				sequences.add(Integer.toString(i));
 			}
