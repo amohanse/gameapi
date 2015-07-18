@@ -18,8 +18,8 @@ using unique keys as query parameters)
 
 Prerequisites
 	Follow the steps to install Heroku cli : 
-			1. [Heroku Introduction]
-            2. [Set Up]
+			1. [Heroku Introduction](https://devcenter.heroku.com/articles/getting-started-with-java#introduction)
+            2. [Set Up](https://devcenter.heroku.com/articles/getting-started-with-java#set-up)
 1. Login to Heroku : > heroku login
 2. Clone this git repo to a directory
 3. Create a app in heroku : > heroku create {optional name}
